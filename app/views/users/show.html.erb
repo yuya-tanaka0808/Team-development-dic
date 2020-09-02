@@ -1,0 +1,15 @@
+<p id="notice"><%= notice %></p>
+<h2>ユーザー詳細</h2>
+<p>
+  <strong>ユーザー名:</strong>
+  <%= @user.name %>
+</p>
+
+<p>
+  <strong>Email:</strong>
+  <%= @user.email %>
+</p>
+
+<%= link_to 'ブログ一覧', blogs_url %>
+<%= link_to '編集', edit_user_path(@user) %>
+<%= link_to '削除', user_path(@user), method: :delete %>
